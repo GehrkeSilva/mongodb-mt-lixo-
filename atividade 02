@@ -1,0 +1,80 @@
+use('fecinavidb')
+db.createCollection("trabalhos")
+db.trabalhos.insertMany([
+    {
+        titulo:"automação das carroças",
+        área:"Tecnologia",
+        autores:[
+            nome:"rafael",
+            e-mail:"rafael@gmail.com"
+        ],
+        dataenvio:"17/09/2023",
+        avaliadores:[
+            CPF:"123-254-851.99",
+            nome:"josé",
+            nota:10
+        ],
+        mediaAvaliações:"10"
+        
+    },
+    {
+        titulo:"como resocializar chimpanzes agricolas",
+        área:"Estudos de caso",
+        autores:[
+            nome:"rafael",
+            e-mail:"rafael@gmail.com"
+        ],
+        dataenvio:"17/09/2023",
+        avaliadores:[
+            CPF:"123-254-851.99",
+            nome:"josé",
+            nota:10
+        ],
+        mediaAvaliações:"10"
+    },
+    {
+        titulo:"a dificuldade no porte de bananas-maça",
+        área:"Estudos de caso",
+        autores:[
+            nome:"rafael",
+            e-mail:"rafael@gmail.com"
+        ],
+        dataenvio:"17/09/2023",
+        avaliadores:[
+            CPF:"123-254-851.99",
+            nome:"josé",
+            nota:10
+        ],
+        mediaAvaliações:"10"
+    },
+    {
+        titulo:"as causas e consequencias da vinda dos sapos cururus",
+        área:"Estudos de caso",
+        autores:[
+            nome:"rafael"
+            e-mail:"rafael@gmail.com"
+        ],
+        dataenvio:"17/09/2023",
+        avaliadores:[
+            CPF:"123-254-851.99",
+            nome:"josé",
+            nota:10
+        ],
+        mediaAvaliações:"10"
+    }
+])
+db.trabalhos.insertOne({
+    titulo:"as causas e consequencias da vinda dos sapos cururus",
+    área:"Biologicas",
+    autores:[
+        nome:"rafael"
+        e-mail:"rafael@gmail.com"
+    ],
+    dataenvio:"17/09/2023",
+    avaliadores:[
+        CPF:"123-254-851.99",
+        nome:"josé",
+        nota:10
+    ],
+    mediaAvaliações:"10"
+})
